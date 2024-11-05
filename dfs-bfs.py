@@ -12,7 +12,7 @@ def bfs(visited,vertex,graph):
     while queue:
         v = queue.pop(0)
         print(v)
-        for neighbour in graph[vertex]:
+        for neighbour in graph[v]:
             if neighbour not in visited:
                 visited.add(neighbour)
                 queue.append(neighbour)
